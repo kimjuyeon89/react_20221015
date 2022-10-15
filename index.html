@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/hello.js"></script>
+    <script src="/world.js"></script>
+    console.log(woldList);
+  </head>
+  <body>
+    <script type="module">
+      import helloStr, { greeting } from "./hello.js";
+      import worldStr, { add } from "./world.js";
+
+      console.log(add(2, 3));
+      greeting();
+      console.log(worldStr);
+    </script>
+  </body>
+</html>
