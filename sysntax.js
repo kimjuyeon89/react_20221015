@@ -88,11 +88,10 @@ let obj = {
     console.log("안녕하세요");
   },
 };
-// let greeting = obj.greeting();
-// let username = obj.username();
-let { username, greeting, age } = obj;
+let greeting = obj.greeting();
+let { username, age } = obj;
 
-console.log(username, age);
+console.log(username, age, greeting);
 
 // 배열 비구조 할당
 //let [변수1, 변수2] = 배열; => 배열의 첫번째 갑승ㄹ 첫번째 변수에, 두번째 값을 두번째 변수에
